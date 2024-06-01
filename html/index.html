@@ -4,42 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EA FC24 - Site Official</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style-header.css">
+    <link rel="stylesheet" href="/style/style-index.css">
+    <link rel="shortcut icon" href="/img/EA-logo.png" type="image/x-icon" />
+    <title>EA SPORTS FC™ 24 - Homepage</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
             <img src="../img/FC24-logo.png" alt="Logo EAFC24 Site Official">
-            <hr>
         </div>
-        <nav class="navigation">
+        <nav class="itensHeader">
             <ul>
-                <li>
-                    <a href="#">Jogos</a>
-                </li>
-                <li>
-                    <a href="#">Produtos</a>
-                </li>
-                <li>
-                    <a href="https://help.ea.com/br/help-top-issues/?product=fc-24" target="_blank">Suporte</a>
-                </li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="https://help.ea.com/br/help-top-issues/?product=fc-24" target="_blank">Suporte</a></li>
             </ul>
         </nav>
+        <!-- <div class="icons">
+            <img src="../img/search.png" alt="">
+            <img src="../img/person.png" alt="">
+            <img src="../img/EA.png" alt="">
+        </div> -->
     </header>
     <main class="class-home" id="home">
+        <img id="img-banner" src="../img/haaland-banner.jpg" alt="Banner Principal EA SPORTS FC com Haaland">
         <!-- <img class="img-banner" src="../img/EA.png" alt=""> -->
-        <img class="img-banner" src="../img/haaland-banner.jpg" alt="Banner EAFC24">
-        <div class="div-logo">
-            <!-- <div class="comprar">Compre EA SPORTS FC™ 24</div> -->
-            <h1 class="plataformas">Já disponível para PlayStation 5 e Xbox Series S|X</h1>
-            <div class="descricao">Vivencie uma autenticidade inigualável no EA SPORTS FC™ 24, com a experiência mais
-                realista de futebol do Jogo de Todo Mundo, contando com grandes competições, clubes e estrelas, com mais
-                de 19.000 atletas com licença, 700 times, 100 estádios e 30 ligas.</div>
-            <div class="btn-comprar"><a href="#">COMPRAR EDIÇÕES</a></div>
-        </div>
-        <section class="class-comprar" id="comprar">
+        <div class="container-game">
+            <img id="img-container" src="/img/EA-FC.png" alt="Logo EA & SPORTS FC">
+            <h1 class="plataformas">Já disponível para PlayStation 4,<br> Xbox One, PlayStation 5, Xbox <br>
+                Series X|S e PC no Steam e
+                <br> Epic Games.</h1>
+            <label class="descricao">Vivencie uma autenticidade inigualável no EA SPORTS FC™ 24, com a experiência mais
+                realista<br> de futebol, contando com mais de 19.000 atletas licenciados, 700 times, 100 estádios e 30 ligas.</label>
+            <a href="#" class="btn-comprar">COMPRAR EDIÇÕES</a>
+        </div> <!-- <div class="comprar">Compre EA SPORTS FC™ 24</div> -->
+
+        <!-- <section class="class-comprar" id="comprar">
             <h2 class="titulo">Compre já!</h2>
             <div class="card">
                 <img class="capa-card" src="../img/FC24-cover.jpg" alt="">
@@ -56,6 +58,8 @@
                 </div>
             </div>
         </section>
+                <video autoplay loop muted ="img-banner" src="../img/Video-EA-SPORTS-FC24 .mp4" alt="Banner EAFC24"> -->
+
     </main>
     <footer></footer>
 </body>
