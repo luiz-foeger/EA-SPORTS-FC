@@ -7,7 +7,7 @@
     
 }
 
-.header {
+.cabecalho {
     background-color: rgb(80, 80, 222);
     display: flex;
     justify-content: space-around;
@@ -17,7 +17,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-.header img {
+.cabecalho img {
     display: flex;
     width: 260px;
     /* margin: 165px; */
@@ -43,7 +43,7 @@
 
 .itensHeader ul li a:hover {
     text-decoration: none;
-    color: rgb(192, 246, 255);
+    color:#07f468;
 }
 
 

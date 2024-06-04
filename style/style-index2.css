@@ -12,36 +12,41 @@ body {
 
 }
 
-.principal {
+
+/* #img-jogo:hover {
+    width: 100%;
+    transition: ease 1s;
+    filter: brightness(100%);
+} */
+
+main div {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+}
+
+.principal {
+    background-color: #d3d3d3;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    justify-content: center;
     color: #fff;
-    z-index: 999;
-    top: 30%;
-    left: 10%;
 }
 
-main video {
-    /* filter: brightness(40%); */
-    filter: brightness(80%);
+#img-jogo {
+    filter: brightness(70%);
+    position: absolute;
 }
 
-#img-sponsor {
-    width: 200px;
-    filter: invert(100%);
-    padding-bottom: 15px;
-}
-
-.principal h1 {
+.plataformas {
     font-size: 45px;
     font-weight: 900;
-    margin-bottom: 18px;
 }
 
-.principal label {
+.descricao {
     font-size: 16px;
+    margin: 25px 0 35px 0;
 }
 
 .btn-comprar {
@@ -53,7 +58,6 @@ main video {
     font-weight: bold;
     font-size: 28px;
     border: 1px solid #ffffff;
-    margin-top: 40px;
     padding: 20px 25px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, border-radius 0.5s;
@@ -65,37 +69,27 @@ main video {
     /* border-radius: 50px; */
 }
 
-.fundo {
-    width: 100vw;
-    position: relative;
-    display: flex;
-}
-
-.gameplay {
-    height: 450px;
-    /* background-color: #161616; */
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/images/2023/06/fc24-authenticity-premier-league-hero-lg-page-header-xl-16x9.jpg.adapt.1920w.jpg);
-}
-
-#video {
-    height: 450px;
+#img-sponsor {
+    width: 200px;
+    filter: invert(100%);
+    padding-bottom: 15px;
 }
 
 #img-estadio {
-    height: 1000px;
-    object-fit: cover;
+    box-shadow: inset 50px 50px 50px rgb(0, 4, 255);
 }
 
-.texto label {
-    font-size: 16px;
+.class-comprar {
+    position: absolute;
 }
 
-.texto h1 {
-    font-size: 45px;
-    font-weight: 900;
-    color: #07f468;
+
+footer {
+    display: flex;
+}
+
+.fundo {
+    width: 100vw;
+    position: absolute;
+    display: flex;
 }
