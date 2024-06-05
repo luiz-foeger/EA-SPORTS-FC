@@ -37,7 +37,7 @@ body {
 }
 
 .container-principal label {
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .btn-comprar {
@@ -85,11 +85,14 @@ body {
 
 .demonstracao-jogo video:hover {
     height: 400px;
-    box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
+    box-shadow: 0px 0px 76px 13px rgba(255,255,255,0.12);
+    -webkit-box-shadow: 0px 0px 76px 13px rgba(255,255,255,0.12);
+    -moz-box-shadow: 0px 0px 76px 13px rgba(255,255,255,0.12);
+    /* box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
     -webkit-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
-    -moz-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
-}
+    -moz-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27); */
 
+}
 
 .demonstracao-jogo .texto {
     display: flex;
@@ -165,8 +168,8 @@ body {
 .class-comprar #titulo {
     font-size: 35px;
     font-weight: 800;
-    margin-top: 5px;
-    margin-bottom: 45px;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 /* .divVideo {
