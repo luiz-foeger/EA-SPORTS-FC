@@ -9,7 +9,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-
+    background-color: #121212;
+    /* background-image: url(/img/background.jpg); */
 }
 
 .principal {
@@ -24,8 +25,8 @@ body {
 }
 
 main video {
-    /* filter: brightness(40%); */
     filter: brightness(80%);
+    /* filter: brightness(40%); */
 }
 
 #img-sponsor {
@@ -41,7 +42,7 @@ main video {
 }
 
 .principal label {
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .btn-comprar {
@@ -73,29 +74,137 @@ main video {
 
 .gameplay {
     height: 450px;
-    /* background-color: #161616; */
+    background-image: url(/img/background.jpg);
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/images/2023/06/fc24-authenticity-premier-league-hero-lg-page-header-xl-16x9.jpg.adapt.1920w.jpg);
+    justify-content: center;
+    /* background-color: #161616; */
 }
 
 #video {
-    height: 450px;
+    height: 400px;
+    transition: height 0.5s, box-shadow 0.8s;
 }
 
-#img-estadio {
-    height: 1000px;
-    object-fit: cover;
+#video:hover {
+    height: 410px;
+    box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
+    -webkit-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
+    -moz-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
 }
 
-.texto label {
-    font-size: 16px;
+
+.texto {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .texto h1 {
     font-size: 45px;
     font-weight: 900;
     color: #07f468;
+    margin-left: 130px;
+
+}
+
+.texto label {
+    font-size: 19px;
+    margin-left: 130px;
+}
+
+/* 
+.class-comprar {
+    height: 900px;
+    background: rgb(22,22,22);
+    background: linear-gradient(180deg, rgba(22, 22, 22, 0.212) 0%, rgba(38,38,148,1) 100%);
+} */
+
+/* background-image: linear-gradient(to bottom, #161616, #262694); */
+/* background: linear-gradient(180deg, rgba(22, 22, 22, 0.212) 0%, rgba(38,38,148,1) 100%); */
+
+.class-comprar {
+    background: url(/img/stadium3.jpg);
+    /* background-color: #161616; */
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    padding: 50px;
+}
+
+.class-comprar .card {
+    height: 700px;
+    width: 900px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 120px;
+}
+
+.card img {
+    width: 250px;
+}
+
+.card video {
+    width: 100vw;
+    height: 1000px;
+    object-fit: cover;
+    position: relative;
+}
+
+.class-comprar h1 {
+    padding: 40px 0px 10px 0px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#titulo-compre {
+    font-size: 45px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+/* .divVideo {
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.plataformas {
+    display: flex;
+    gap: 32px;
+    text-decoration: none;
+}
+
+
+.plataformas img {
+    width: 120px;
+}
+
+/* .plataformas ul li {
+    text-decoration: none;
+}
+ */
+
+.informacoes a {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #252525;
+    height: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
