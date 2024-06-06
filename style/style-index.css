@@ -81,16 +81,18 @@ body {
     filter: brightness(80%);
     height: 390px;
     transition: height 0.5s, box-shadow 0.8s;
+
 }
 
 .demonstracao-jogo video:hover {
-    height: 400px;
-    box-shadow: 0px 0px 76px 13px rgba(255,255,255,0.12);
-    -webkit-box-shadow: 0px 0px 76px 13px rgba(255,255,255,0.12);
-    -moz-box-shadow: 0px 0px 76px 13px rgba(255,255,255,0.12);
+    height: 395px;
+    box-shadow: 0px 0px 76px 13px rgba(255, 255, 255, 0.12);
+    -webkit-box-shadow: 0px 0px 76px 13px rgba(255, 255, 255, 0.12);
+    -moz-box-shadow: 0px 0px 76px 13px rgba(255, 255, 255, 0.12);
     /* box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
     -webkit-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
     -moz-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27); */
+
 
 }
 
@@ -127,6 +129,7 @@ body {
 
 .class-comprar {
     background: url(/img/stadium3.jpg);
+    width: 100vw;
     /* background-color: #161616; */
     text-align: center;
     justify-content: center;
@@ -136,7 +139,7 @@ body {
 }
 
 .class-comprar .card {
-    height: 700px;
+    height: 800px;
     width: 900px;
     background-color: #000;
     display: flex;
@@ -172,6 +175,12 @@ body {
     margin-bottom: 50px;
 }
 
+.class-comprar .plataformas img {
+    height: 20px;
+    width: auto;
+    object-fit: cover;
+}
+
 /* .divVideo {
     display: flex;
     position: relative;
@@ -180,16 +189,20 @@ body {
     align-items: center;
 } */
 
-.class-comprar .plataformas {
+.class-comprar ul li {
+    margin-top: 32px;
     display: flex;
-    gap: 32px;
     text-decoration: none;
 }
 
-
-.class-comprar .plataformas img {
-    width: 120px;
+/* #xbox-series {
+    width: 150px;
 }
+
+#pc {
+    width: 90px;
+} */
+
 
 /* .plataformas ul li {
     text-decoration: none;
@@ -207,4 +220,80 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.class-comprar .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.class-comprar .btn-plataforma .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.class-comprar .btn-plataforma .plataformas.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+
+.class-comprar .btn-plataforma .plataformas li {
+    height: 70px;
+    width: 380px;
+}
+
+.class-comprar .btn-plataforma .plataformas li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(1) {
+    border: 1px solid #00439c;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(1):hover {
+    background-color: #00439c;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(2) {
+    border: 1px solid #387a26;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(2):hover {
+    background-color: #387a26;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(4) {
+    border: 1px solid #387a26;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(4):hover {
+    background-color: #387a26;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(5) {
+    border: 1px solid #b40f0f;
+}
+
+.class-comprar .btn-plataforma .plataformas li:nth-child(5):hover {
+    background-color: #b40f0f;
 }
