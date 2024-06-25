@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* .section-eurocopa {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+
+} */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f7f7;    
+    /* background-image: url(/img/background.jpg); */
+}
+
+.section-eurocopa img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+}
+
+.demonstracao-jogo {
+    height: 450px;
+    background-image: url(/img/background.jpg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #161616; */
+}
+
+
+.demonstracao-jogo .texto {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.demonstracao-jogo .texto h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #07f468;
+    margin-left: 130px;
+
+}
+
+.demonstracao-jogo .texto label {
+    font-size: 19px;
+    margin-left: 130px;
+}
+
+/*  */
+
+.demonstracao-jogo2 {
+    height: 450px;
+    width: 100%;
+    background-image: url(/img/FC24-texture-2.jpg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #161616; */
+}
+
+
+.demonstracao-jogo2 .texto {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.demonstracao-jogo2 .texto h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #161616;
+text-align: center;
+}
+
+.demonstracao-jogo2 .texto img {
+height: auto;
+    width: 65%;
+}
