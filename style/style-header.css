@@ -46,5 +46,18 @@
     color:#07f468;
 }
 
+@media screen and (max-width: 670px) {
+    .cabecalho {
+        height: 50px;
+        width: 100%;
+    }
 
-
+    .cabecalho img {
+        width: 125px;
+    }
+    
+    .itensHeader ul li {
+        font-size: 14px;
+        margin: 0px 9px;
+    }
+}
