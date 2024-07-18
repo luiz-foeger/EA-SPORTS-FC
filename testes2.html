@@ -4,43 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .container {
-            position: relative;
-            display: inline-block;
-        }
+.container {
+    position: relative;
+    width: 300px; /* largura qualquer */
+    height: 200px; /* altura qualquer */
+}
 
-        .image {
-            display: block;
-            width: 300px;
-            height: auto;
-            transition: 0.3s ease;
-        }
+.div1, .div2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
-        .container:hover .image {
-            filter: brightness(50%);
-        }
+.div1 {
+    background-color: #f0f0f0;
+    z-index: 1; /* div1 fica abaixo de div2 */
+}
 
-        .description {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            opacity: 0;
-            transition: 0.3s ease;
-        }
+.div2 {
+    background-color: #ffffff; /* cor da div2 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra da div2 */
+    z-index: 2; /* div2 fica sobre div1 */
+}
 
-        .container:hover .description {
-            opacity: 1;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="sua-imagem.jpg" alt="Imagem" class="image">
-        <div class="description">Esta é uma breve descrição</div>
+        <div class="div1"></div>
+        <div class="div2"></div>
     </div>
+    
 </body>
 </html>

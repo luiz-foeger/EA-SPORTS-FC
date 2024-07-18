@@ -7,6 +7,12 @@
     
 }
 
+body {
+    min-width: 600px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
 .cabecalho {
     background-color: rgb(80, 80, 222);
     display: flex;
@@ -46,6 +52,15 @@
     color:#07f468;
 }
 
+footer {
+    background-color: #252525;
+    height: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 670px) {
     .cabecalho {
         height: 50px;
@@ -60,4 +75,10 @@
         font-size: 14px;
         margin: 0px 9px;
     }
+    
+    footer {
+        height: 80px;
+        font-size: 10px;
+    }
 }
+
