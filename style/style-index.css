@@ -9,7 +9,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #f7f7f7;
+    background-color: #000000;
     /* background-image: url(/img/background.jpg); */
 }
 
@@ -69,7 +69,11 @@ body {
 
 .demonstracao-jogo {
     height: 450px;
+    /* background-image: url(/img/background.jpg); */
     background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     color: #fff;
     display: flex;
     align-items: center;
@@ -83,15 +87,15 @@ body {
     transition: height 0.5s, box-shadow 0.8s;
 }
 
-.demonstracao-jogo video:hover {
+/* .demonstracao-jogo video:hover {
     height: 390px;
     box-shadow: 0px 0px 76px 13px rgba(255, 255, 255, 0.12);
     -webkit-box-shadow: 0px 0px 76px 13px rgba(255, 255, 255, 0.12);
     -moz-box-shadow: 0px 0px 76px 13px rgba(255, 255, 255, 0.12);
-    /* box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
+    box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
     -webkit-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
-    -moz-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27); */
-}
+    -moz-box-shadow: 1px 0px 135px -16px rgba(191, 191, 191, 0.27);
+} */
 
 .demonstracao-jogo .texto {
     display: flex;
@@ -99,20 +103,66 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 100px;
 }
 
-.demonstracao-jogo .texto h1 {
+.titulo-principal {
     font-size: 45px;
     font-weight: 900;
     color: #07f468;
-    margin-left: 130px;
-
+    text-align: center;
 }
 
 .demonstracao-jogo .texto label {
     font-size: 19px;
-    margin-left: 130px;
 }
+
+/* --------------------------- */
+
+.caixa-Carousel {
+    /* background-color: #131313; */
+    /* background-image: url(/img/FC24-texture-1.jpg); */
+    background-color: #0e0e0e;
+    background-size: contain;
+    background-position: center;
+    padding: 20px;
+}
+
+.caixa-Carousel h1 {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 40px;
+}
+
+
+/* div que armazena as div imagem */
+.slideImg {
+    display: flex;
+    height: 300px;
+    gap: 20px;
+    padding: 50px 200px;
+    height: 800px;
+}
+
+.slideImg div {
+    border-radius: 20px;
+    flex: 1;
+    /*todas as imagens no mesmo tamanho no espaço da div*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    transition: all .6s;
+    cursor: pointer;
+}
+
+.slideImg div:hover {
+    flex: 2.3;
+
+    /*ao tocar na imagem, ela abre no tamanho maior que a apresentada*/
+}
+
+
+/* --------------------------- */
 
 /* 
 .class-comprar {
@@ -125,14 +175,18 @@ body {
 /* background: linear-gradient(180deg, rgba(22, 22, 22, 0.212) 0%, rgba(38,38,148,1) 100%); */
 
 .class-comprar {
+    /* background-image: url(/img/FC24-texture-1.jpg);
+    background-size: contain; */
     background: url(/img/stadium3.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     /* background-color: #161616; */
     text-align: center;
     justify-content: center;
     align-content: center;
     color: #fff;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .class-comprar .card {
@@ -160,16 +214,10 @@ body {
     position: relative;
 }
 
-.class-comprar h1 {
-    padding: 40px 0px 10px 0px;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.class-comprar #titulo {
-    font-size: 35px;
-    font-weight: 800;
-    margin-top: 60px;
+.class-comprar .titulo-principal {
+    margin-top: 100px;
+    color: #fff;
+    font-size: 40px;
     /* margin-bottom: 50px; */
 }
 
@@ -177,6 +225,12 @@ body {
     height: 20px;
     width: auto;
     object-fit: cover;
+}
+
+.class-comprar .informacoes h1 {
+    padding: 40px 0px 10px 0px;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 /* .divVideo {
@@ -296,7 +350,7 @@ footer {
     background-color: #b40f0f;
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1500px) {
     .container-principal #img-sponsor {
         width: 150px;
         filter: invert(100%);
@@ -330,14 +384,16 @@ footer {
 
     }
 
+    .demonstracao-jogo .texto {
+        margin-left: 60px;
+    }
+
     .demonstracao-jogo .texto h1 {
         font-size: 35px;
-        margin-left: 40px;
     }
 
     .demonstracao-jogo .texto label {
         font-size: 15px;
-        margin-left: 40px;
     }
 }
 
@@ -396,14 +452,14 @@ footer {
     .class-comprar .card img {
         width: 150px;
     }
-    
+
     .class-comprar .card video {
         width: 100%;
         height: 1000px;
         object-fit: cover;
         position: relative;
     }
-    
+
     .class-comprar h1 {
         padding: 40px 0px 10px 0px;
         font-size: 25px;
@@ -414,15 +470,15 @@ footer {
         font-size: 13px;
         margin: 0px 10px;
     }
-    
+
     .class-comprar #titulo {
         font-size: 25px;
         margin-top: 0px;
-        padding: 0px    ;
+        padding: 0px;
         /* margin-bottom: 50px; */
     }
-    
+
     .class-comprar .informacoes .plataformas {
         display: none;
-    }    
+    }
 }

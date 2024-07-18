@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image {
+            display: block;
+            width: 300px;
+            height: auto;
+            transition: 0.3s ease;
+        }
+
+        .container:hover .image {
+            filter: brightness(50%);
+        }
+
+        .description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+
+        .container:hover .description {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="sua-imagem.jpg" alt="Imagem" class="image">
+        <div class="description">Esta é uma breve descrição</div>
+    </div>
+</body>
+</html>
