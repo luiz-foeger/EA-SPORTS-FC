@@ -41,34 +41,44 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    padding: 5px 0px;
 }
 
 /* ---------------------- */
 
 .imagem {
-    width: 100%;
-height: auto;
+    height: 78px;
 }
 
 .section-slide {
-    animation: slide 16s linear infinite;
-    width: 100%;
+    animation: slide 150s linear infinite;
+    width: 5000px;
 }
 
 @keyframes slide {
-    0% { transform: translateX(-100px); }
-    50% { transform: translateX(50px); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(-650px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(-650px);
+    }
 }
 
 .section-slide {
     background-color: #2353a9;
     justify-content: center;
-    height: 100px;
+    height: 100%;
     width: 100%;
     color: #fff;
     display: flex;
     align-items: center;
+    width: 5000px;
+
 }
 
 
