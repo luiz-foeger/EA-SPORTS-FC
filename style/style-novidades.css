@@ -116,7 +116,7 @@ body {
     justify-content: center; */
     height: 450px;
     /* background-image: url(/img/background.jpg); */
-    background-image: url(/img/background.jpg);
+    background-image: url(/assets/img/background/background.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -157,7 +157,7 @@ body {
 .demonstracao-jogo2 {
     height: 450px;
     width: 100%;
-    background-image: url(/img/FC24-texture-2.jpg);
+    background-image: url(/assets/img/background/FC24-texture-2.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;

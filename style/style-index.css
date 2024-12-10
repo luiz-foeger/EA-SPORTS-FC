@@ -71,7 +71,7 @@ body {
 .demonstracao-jogo {
     height: 450px;
     /* background-image: url(/img/FC24-texture-1.jpg); */
-    background-image: url(/img/background.jpg);
+    background-image: url(/assets/img/background/background.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -192,20 +192,12 @@ body {
 
 /* --------------------------- */
 
-/* 
-.class-comprar {
-    height: 900px;
-    background: rgb(22,22,22);
-    background: linear-gradient(180deg, rgba(22, 22, 22, 0.212) 0%, rgba(38,38,148,1) 100%);
-} */
 
-/* background-image: linear-gradient(to bottom, #161616, #262694); */
-/* background: linear-gradient(180deg, rgba(22, 22, 22, 0.212) 0%, rgba(38,38,148,1) 100%); */
 
 .class-comprar {
     /* background-image: url(/img/FC24-texture-1.jpg);
     background-size: contain; */
-    background: url(/img/stadium3.jpg);
+    background: url(/assets/img/background/stadium3.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;

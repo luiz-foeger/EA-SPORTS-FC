@@ -57,6 +57,11 @@ body {
     color:#07f468;
 }
 
+i {
+    font-size: 15px;
+    margin-left: 3px;
+}
+
 footer {
     background-color: #252525;
     height: 130px;
@@ -64,6 +69,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14.5px;
 }
 
 @media screen and (max-width: 670px) {
